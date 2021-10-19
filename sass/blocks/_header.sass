@@ -1,0 +1,41 @@
+.header
+  padding: 25px 0
+  &__curtains
+    width: 100%
+  &__logo:hover::after
+    width: 0
+
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item:first-child
+    font-family: 'Lato', sans-serif
+  &__item
+    text-decoration: none
+    color: #000
+    position: relative
+    padding: 5px 0
+  &__item::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 50%
+    display: block
+    background: none repeat scroll 0 0 transparent
+    height: 2px
+    width: 0
+    background: #000
+    transition: width 0.3s ease 0s, left 0.3s ease 0s
+  &__item:hover::after
+    width: 100%
+    left: 0
+  &__phone
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+  &__number
+    text-decoration: none
+    color: #000
+  &__order
+    font-size: 10px

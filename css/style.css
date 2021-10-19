@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.header__curtains {
+  width: 100%;
+}
+
+.header__logo:hover::after {
+  width: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item:first-child {
+  font-family: 'Lato', sans-serif;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav__item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav__phone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.nav__number {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__order {
+  font-size: 10px;
+}
+
+.main {
+  padding: 250px 0;
+}
+
+.main__title {
+  font-size: 60px;
+  position: relative;
+}
+
+.main__title::after {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 70px;
+  left: 15px;
+  top: -60px;
+  background-image: url(../img/quote-up.svg);
+  background-repeat: no-repeat;
+}
+
+.main__title::before {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 70px;
+  right: 100px;
+  bottom: -60px;
+  background-image: url(../img/quote-down.svg);
+  background-repeat: no-repeat;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map {
+  height: 250px;
+  width: 600px;
+  text-align: center;
+}
+
+.map__question {
+  font-size: 30px;
+}
+
+.map-wrapper {
+  border: 2px solid #000;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  margin-top: 15px;
+}
+
+.map-wrapper:hover {
+  box-shadow: 0 0 15px #000;
+}
