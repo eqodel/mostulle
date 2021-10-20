@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+      // Создает экземпляр карты и привязывает его к созданному контейнеру
+      var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+      // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+      map.setCenter(new YMaps.GeoPoint(37.384172, 55.853562), 10);
+      
+      // Создает метку в центре Москвы
+      var placemark = new YMaps.Placemark(new YMaps.GeoPoint(37.384172, 55.853562));
+
+      // Устанавливает содержимое балуна
+      placemark.name = "Мы здесь!";
+      placemark.description = "Митино, ул. Центральная 24а";
+
+      // Добавляет метку на карту
+      map.addOverlay(placemark);
+    })
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=Lato:ital,wght@1,700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>mostulle</title>
 </head>
@@ -34,20 +57,33 @@
   <section class="main">
     <div class="container">
       <div class="main-wrapper">
-        <h1 class="main__title">Текстильное оформление высшего класса</h1>
+        <h1 class="main__title">Текстильное оформление интерьеров. Дизайн и пошив штор</h1>
         <div class="map">
           <span class="map__question">
             Где нас найти?
           </span>
           <div class="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.5245492309864!2d37.381977951624556!3d55.85356499158802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDUxJzEyLjgiTiAzN8KwMjMnMDMuMCJF!5e0!3m2!1sru!2sru!4v1634679618400!5m2!1sru!2sru"
-              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="YMapsID" style="width:100%;height:250px"></div>
           </div>
         </div>
-       
       </div>
     </div>
   </section>
+  <section class="carousel">
+    <div id="js-carousel-1" class="owl-carousel">
+    
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-1.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-2.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-3.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-4.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-5.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-6.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-7.png" alt=""></div>
+    
+    </div>
+  </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
