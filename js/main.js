@@ -9,7 +9,7 @@ $('#js-carousel-1').owlCarousel({
   autoplaySpeed: 3000,
   autoplayHoverPause: true,
   slideTransition: 'linear',
-  items: 2,
+  items: 1,
   nav: false,
   dots: false,
 
@@ -18,5 +18,10 @@ $('#js-carousel-1').owlCarousel({
       items: 3
     }
   }
+});
+
+var menuButton = $('.menu');
+menuButton.on('click', function () {
+  $('.nav-wrap').toggleClass('nav-wrap_visible');
 });
 

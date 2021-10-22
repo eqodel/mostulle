@@ -1,16 +1,19 @@
 .header
   padding: 25px 0
+  background-color: #fff
   &__curtains
     width: 100%
-  &__logo:hover::after
-    width: 0
+  &__logo
+    margin-right: 50px
 
 .nav
   display: flex
-  justify-content: space-between
-  align-items: center
-  &__item:first-child
-    font-family: 'Lato', sans-serif
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+    width: 100%
   &__item
     text-decoration: none
     color: #000
@@ -39,3 +42,12 @@
     color: #000
   &__order
     font-size: 10px
+
+.menu
+  display: none
+  cursor: pointer
+  &__item
+    width: 15px
+    height: 2px
+    background-color: #000
+    margin-bottom: 2px
