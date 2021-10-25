@@ -52,6 +52,14 @@
   .nav
     font-size: 10px
 
+  .about
+    &__more
+      display: none
+    &__description
+
+    &__button
+      display: block
+
 @media (min-width: 320px) and (max-width: 480px)
   .main
     padding: 50px 0
@@ -102,3 +110,12 @@
   .carousel
     &-item
       height: 150px
+
+  .about
+    &__item
+      flex-direction: column
+    &__img
+      object-fit: cover
+      background-position: top
+      height: 300px
+      width: 100%

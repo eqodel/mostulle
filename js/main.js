@@ -25,3 +25,21 @@ menuButton.on('click', function () {
   $('.nav-wrap').toggleClass('nav-wrap_visible');
 });
 
+AOS.init();
+
+$('.footer__form').each(function() {
+    $(this).validate({
+    messages: {
+    name: "Пожалуйста, оставьте ваше имя*",
+    phone: "Также ваш номер телефона*",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+  });
+  });
+
+  $(document).ready(function(){
+    $('.phone').mask('+7 (999) 999-99-99');
+  });
