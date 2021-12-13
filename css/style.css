@@ -204,6 +204,14 @@ body {
   display: none;
 }
 
+.works {
+  padding: 70px 0;
+}
+
+.works__title {
+  font-size: 30px;
+}
+
 .footer {
   background: #D7D7D7;
   padding: 60px 0;
@@ -291,6 +299,15 @@ body {
   }
   .main {
     padding: 150px 0;
+  }
+  .footer-wrap {
+    flex-direction: column;
+  }
+  .footer__title {
+    font-size: 15px;
+  }
+  .footer__num {
+    font-size: 14px;
   }
 }
 
