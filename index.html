@@ -46,11 +46,11 @@
       <nav class="nav">
         <img class="header__logo" src="img/header-logo.png" alt="">
         <div class="nav-wrap">
-          <a href="#" class="nav__item">О нас</a>
-          <a href="#" class="nav__item">Наши работы</a>
-          <a href="#" class="nav__item">Услуги</a>
+          <a href="#" onclick="slowScroll('#about')" class="nav__item">О нас</a>
+          <a href="#" onclick="slowScroll('#works')" class="nav__item">Наши работы</a>
+          <a href="#" onclick="slowScroll('#services')" class="nav__item">Услуги</a>
           <a href="#" class="nav__item">Цены</a>
-          <a href="#" class="nav__item">Как с нами связаться?</a>
+          <a href="#" onclick="slowScroll('#footer')" class="nav__item">Как с нами связаться?</a>
           <div class="nav__phone">
             <a href="tel:+7(901)-386-49-60" class="nav__number">
               +7(901)-386-49-60
@@ -94,7 +94,7 @@
 
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div data-aos="flip-up" class="about__item">
         <img src="img/man.png" alt="" class="about__img">
@@ -118,7 +118,7 @@
       </div>
     </div>
   </section>
-  <section class="works">
+  <section class="works" id="works">
     <div class="container">
       <h2 class="works__title section__title">
         Вот, что мы умеем:
@@ -142,7 +142,7 @@
       </div>
     </div>
   </section>
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2 class="section__title">Вот, что мы предлагаем:</h2>
       <div class="services-wrapper">
@@ -164,7 +164,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer__details">
