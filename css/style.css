@@ -3,13 +3,18 @@
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin: 0;
 }
 
 .container {
   max-width: 1150px;
   margin: auto;
+}
+
+.section__title {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
 .header {
@@ -100,7 +105,7 @@ body {
 
 .main__title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 70px;
   height: 70px;
   left: -24px;
@@ -111,7 +116,7 @@ body {
 
 .main__title::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 70px;
   height: 70px;
   right: 100px;
@@ -189,7 +194,7 @@ body {
 .about__description {
   font-size: 14px;
   font-weight: 300;
-  background: #D7D7D7;
+  background: #d7d7d7;
   height: 100%;
   padding: 20px;
   border-radius: 5px;
@@ -208,12 +213,8 @@ body {
   padding: 70px 0;
 }
 
-.works__title {
-  font-size: 30px;
-}
-
 .footer {
-  background: #D7D7D7;
+  background: #d7d7d7;
   padding: 60px 0;
 }
 
@@ -282,6 +283,31 @@ body {
 
 .footer__form {
   max-width: 500px;
+}
+
+.services {
+  padding: 50px 0;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: space-between;
+  transition: ease 0.3s;
+  height: 300px;
+  width: 300px;
+}
+
+.services__item:hover {
+  box-shadow: 0 0 15px #000;
 }
 
 @media (max-width: 992px) {
