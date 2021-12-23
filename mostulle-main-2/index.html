@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+      // Создает экземпляр карты и привязывает его к созданному контейнеру
+      var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+      // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+      map.setCenter(new YMaps.GeoPoint(37.384172, 55.853562), 10);
+
+
+      // Создает метку в центре Москвы
+      var placemark = new YMaps.Placemark(new YMaps.GeoPoint(37.384172, 55.853562));
+
+      // Устанавливает содержимое балуна
+      placemark.name = "Мы здесь!";
+      placemark.description = "Митино, ул. Центральная 24а";
+
+      // Добавляет метку на карту
+      map.addOverlay(placemark);
+    })
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=Lato:ital,wght@1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>mostulle</title>
+</head>
+
+<body>
+  <header class="header header_mobile_fixed">
+    <div class="container">
+      <nav class="nav">
+        <img class="header__logo" src="img/header-logo.png" alt="">
+        <div class="nav-wrap">
+          <a href="#" onclick="slowScroll('#about')" class="nav__item">О нас</a>
+          <a href="#" onclick="slowScroll('#works')" class="nav__item">Наши работы</a>
+          <a href="#" onclick="slowScroll('#services')" class="nav__item">Услуги</a>
+          <a href="#" onclick="slowScroll('#price')" class="nav__item">Цены</a>
+          <a href="#" onclick="slowScroll('#footer')" class="nav__item">Как с нами связаться?</a>
+          <div class="nav__phone">
+            <a href="tel:+7(901)-386-49-60" class="nav__number">
+              +7(901)-386-49-60
+            </a>
+            <span class="nav__order">Связаться с нами</span>
+          </div>
+        </div>
+        <button class="menu">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <div class="main-wrapper">
+        <h1 data-aos="fade-right" class="main__title">Текстильное оформление интерьеров. Дизайн и пошив штор</h1>
+        <div data-aos="fade-left" class="map">
+          <span class="map__question">
+            Где нас найти?
+          </span>
+          <div class="map-wrapper">
+            <div id="YMapsID" style="width:100%;height:250px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="carousel">
+    <div id="js-carousel-1" class="owl-carousel">
+
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-1.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-2.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-3.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-4.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-5.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-6.png" alt=""></div>
+      <div class="carousel-item"><img class="carousel-img" src="img/autoslider-img-7.png" alt=""></div>
+
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div data-aos="flip-up" class="about__item">
+        <img src="img/man.png" alt="" class="about__img">
+        <p class="about__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aperiam nobis repellendus quos officia, quae
+          repudiandae obcaecati blanditiis corporis aliquam dolor velit ut sequi distinctio similique nam iusto optio,
+          provident cupiditate qui labore quod perspiciatis laboriosam veritatis! Soluta repellendus molestiae fugiat
+          eos neque, omnis ducimus! Non fuga ducimus placeat eligendi id, cum quam? Dolor odio vel, nulla eaque delectus
+          omnis ea aut, magnam soluta error inventore dolore maxime? Ut enim pariatur fugit, repellendus consequuntur
+          debitis, non repudiandae iste, porro quibusdam blanditiis sit dignissimos sapiente? Necessitatibus nihil dolor
+          fugit quo maiores rerum neque minima, ratione placeat sit esse repellendus, iure dolorem mollitia nam error
+          soluta facilis, natus totam fuga. Eius animi a numquam ut unde totam repudiandae magnam, itaque necessitatibus
+          cumque soluta perferendis veritatis explicabo doloremque ipsa quo aliquam cum illum voluptatem rerum, dolore
+          quos laboriosam culpa? Repellat itaque dolore, voluptatibus ratione et suscipit ullam temporibus libero
+          voluptas natus dolores quis similique aut aspernatur eum nostrum? Nesciunt, asperiores? Magnam, deleniti
+          necessitatibus? Aliquid molestias nemo qui suscipit quae cupiditate nobis, voluptas, aut, at minima culpa
+          quidem fuga veritatis sit vitae quos repellat ducimus quibusdam unde eum harum sapiente non. Voluptates iusto
+          veritatis assumenda! Debitis non minus, alias expedita impedit maiores maxime id!
+          <button class="about__button">Подробнее...</button>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="works" id="works">
+    <div class="container">
+      <h2 class="works__title section__title">
+        Вот, что мы умеем:
+      </h2>
+      <!-- Slider main container -->
+      <div class="swiper works__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section__title">Вот, что мы предлагаем:</h2>
+      <div class="services-wrapper">
+        <div class="services__item">
+          <h3 class="services__title">Какая-то услуга</h3>
+          <img class="services__img" alt="Картинка">
+          <span class="services__description">Какое-то описание услуги</span>
+        </div>
+        <div class="services__item">
+          <h3 class="services__title">Какая-то услуга</h3>
+          <img class="services__img" alt="Картинка">
+          <span class="services__description">Какое-то описание услуги</span>
+        </div>
+        <div class="services__item">
+          <h3 class="services__title">Какая-то услуга</h3>
+          <img class="services__img" alt="Картинка">
+          <span class="services__description">Какое-то описание услуги</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price" id="price">
+      <div class="container">
+          <h2 class="section__title">Цены на услуги</h2>
+          <div class="price__wrapper">
+             <div class="price__item">
+                 <h3 class="price__title">Выезд и замеры</h3>
+                 <ul>
+                    <li>
+                        <p class="price__description">Выезжаем на дом с образцами тканей. Делаем профессиональный замер для установки карнизов, учитывая все особенности помещения</p>
+                    </li>
+                 </ul>
+                 <span class="price__offer">Cтоимость услуги: 1.500₽ по Москве, 2.000₽ Подмосковье </span>
+             </div>
+             <div class="price__item">
+                 <h3 class="price__title">Пошив</h3>
+                 <ul>
+                     <li>
+                         <p class="price__description">Шьём классические шторы, римские шторы, французские шторы, покрывала и т.д.</p>
+                     </li>
+                 </ul>
+                 <span class="price__offer">Cтоимость услуги: от 350₽ </span>
+                 <ul>
+                     <li>
+                         <p class="price__description">Подбираем солнцезащитные шторы, рулонные шторы, шторы-плиссе, жалюзи</p>
+                     </li>
+                 </ul>
+                 <span class="price__offer">Cтоимость услуги: от 350₽ </span>
+             </div>
+             <div class="price__item">
+                 <h3 class="price__title">Монтаж</h3>
+                 <ul>
+                    <li>
+                        <p class="price__description">Осуществляем монтаж обычных и моторизированных изделий</p>
+                    </li>
+                 </ul>
+                 <span class="price__offer">Cтоимость услуги: рассчитывется индивидуально, учитывая нужный размер</span>
+                 <p class="price__description">Монтаж солнцезащитных изделий от 600₽ шт.</p>
+             </div>
+          </div>
+      </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer__details">
+          <div class="footer__social">
+            <h3 class="footer__title">Наши социальные сети:</h3>
+            <a class="footer__icon" href="https://www.instagram.com/tatianashefer.dekor/?utm_medium=copy_link"><img
+                src="img/inst.svg" alt=""></a>
+          </div>
+          <div class="footer__contact">
+            <h3 class="footer__title">Как с нами связаться:</h3>
+            <a href="tel:+7(901)-386-49-60" class="footer__num">
+              +7(901)-386-49-60
+            </a>
+          </div>
+        </div>
+        <form action="send.php" method="POST" class="footer__form">
+          <input type="text" required placeholder="Ваше имя*" class="footer__input" name="name">
+          <input type="text" required placeholder="Номер контактного телефона*" class="footer__input phone"
+            name="phone">
+          <textarea placeholder="Что ещё нам нужно знать?" class="footer__message" name="message"></textarea>
+          <button type="submit" class="footer__button">Отправить!</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
